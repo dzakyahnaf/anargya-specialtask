@@ -41,31 +41,10 @@ export default function Navigation() {
               About Us
             </Link>
             <Link
-              href="/clients"
+              href="/products"
               className="font-medium text-white transition-colors hover:text-[#d9d9d9]"
             >
-              Clients
-            </Link>
-            <Link
-              href="/store"
-              className="font-medium text-white transition-colors hover:text-[#d9d9d9]"
-            >
-              Store
-            </Link>
-            <div className="flex items-center space-x-1">
-              <Link
-                href="/events"
-                className="font-medium text-white transition-colors hover:text-[#d9d9d9]"
-              >
-                Events
-              </Link>
-              <ChevronDown className="h-4 w-4 text-white" />
-            </div>
-            <Link
-              href="/services"
-              className="font-medium text-white transition-colors hover:text-[#d9d9d9]"
-            >
-              Services
+              Products
             </Link>
           </div>
         </div>
