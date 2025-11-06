@@ -10,7 +10,7 @@ export default async function Index() {
         background: "linear-gradient(145deg, #000000 40%, #3CF167 200%)",
       }}
     >
-      <div className="relative flex min-h-screen w-full flex-col items-center justify-center gap-4 p-6 md:gap-8">
+      <div className="relative flex min-h-screen w-full flex-col items-center justify-center gap-10 p-6 md:gap-8">
         <div className="absolute inset-0">
           <Image
             src="/images/hero.png"
@@ -38,7 +38,7 @@ export default async function Index() {
         />
 
         <h1
-          className="relative z-10 max-w-5xl text-center text-4xl font-bold md:text-6xl lg:text-7xl"
+          className="relative z-10 max-w-5xl text-center text-5xl font-bold md:text-6xl lg:text-7xl"
           style={{
             background:
               "linear-gradient(to bottom, #000000 -100%, #3CF167 100%)",
@@ -49,7 +49,7 @@ export default async function Index() {
         >
           WHO ARE WE?
         </h1>
-        <p className="relative z-10 max-w-5xl text-center text-2xl text-white md:text-2xl">
+        <p className="relative z-10 max-w-5xl text-center text-xl text-white md:text-2xl">
           Anargya ITS EV Team is an electric vehicle research team dedicated to
           the research and development of electric vehicles, as well as
           participating in FSAE (Formula Society of Automotive Engineers)
@@ -88,7 +88,7 @@ export default async function Index() {
         </div>
       </div>
 
-      <div className="flex h-fit w-full flex-col items-center justify-center gap-4 bg-black py-16 md:gap-[50px]">
+      <div className="flex h-fit w-full flex-col items-center justify-center gap-4 bg-black pb-20 gap-16 md:gap-[50px]">
         <h1 className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl">
           WHAT THEY SAY ABOUT FSAE JOURNEY?
         </h1>
@@ -168,10 +168,10 @@ export default async function Index() {
         </div>
 
         {/* Content */}
-        <h1 className="relative z-10 max-w-4xl border-white text-center text-2xl font-bold text-white md:text-4xl lg:text-5xl">
+        <h1 className="relative z-10 max-w-xl border-white text-center text-2xl font-bold text-white md:text-4xl lg:text-6xl">
           See What Drives Innovation.
         </h1>
-        <h2 className="font-regular relative z-10 max-w-3xl text-center text-base text-white md:text-lg lg:text-xl">
+        <h2 className="font-regular relative z-10 max-w-3xl text-center text-base text-white md:text-lg lg:text-2xl">
           Browse through our latest vehicle and motorcycle lineup that defines
           style, speed, and sustainability.
         </h2>
