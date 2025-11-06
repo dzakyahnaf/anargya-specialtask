@@ -1,8 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default async function Index() {
+export default function Index() {
   return (
     <div
       className="flex min-h-screen w-full flex-col items-center justify-center"
@@ -37,7 +40,10 @@ export default async function Index() {
           }}
         />
 
-        <h1
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="relative z-10 max-w-5xl text-center text-5xl font-bold md:text-6xl lg:text-7xl"
           style={{
             background:
@@ -48,8 +54,13 @@ export default async function Index() {
           }}
         >
           WHO ARE WE?
-        </h1>
-        <p className="relative z-10 max-w-5xl text-center text-xl text-white md:text-2xl">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="relative z-10 max-w-5xl text-center text-xl text-white md:text-2xl"
+        >
           Anargya ITS EV Team is an electric vehicle research team dedicated to
           the research and development of electric vehicles, as well as
           participating in FSAE (Formula Society of Automotive Engineers)
@@ -57,13 +68,23 @@ export default async function Index() {
           competitions, in general. Our team consists of highly determined and
           enthusiastic individuals from various academic backgrounds at the
           Sepuluh Nopember Institute of Technology.
-        </p>
+        </motion.p>
       </div>
-      <h1 className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl mt-32 md:mt-40">
+      <motion.h1
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ margin: "-100px" }}
+        className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl mt-32 md:mt-40"
+      >
         ANARGYA ITS EV CAR
-      </h1>
-      <div
+      </motion.h1>
+      <motion.div
         id="about-us"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ margin: "-100px" }}
         className="relative flex h-fit w-full flex-col items-center justify-center gap-2 bg-black p-6 pb-24 pt-12 md:gap-[50px] md:pb-64 md:pt-24 scroll-smooth"
       >
         <div className="absolute inset-0">
@@ -76,7 +97,11 @@ export default async function Index() {
           />
         </div>
 
-        <div className="relative z-10 aspect-[15/8] w-[60%] rounded-2xl md:rounded-3xl overflow-hidden">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 300, damping: 10 }}
+          className="relative z-10 aspect-[15/8] w-[60%] rounded-2xl md:rounded-3xl overflow-hidden"
+        >
           <Image
             src="/images/car.png"
             alt="Car showcase"
@@ -85,26 +110,43 @@ export default async function Index() {
             sizes="(max-width: 768px) 60vw, 60vw"
             priority
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex h-fit w-full flex-col items-center justify-center gap-4 bg-black pb-20 gap-16 md:gap-[50px]">
-        <h1 className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl">
+      <div className="flex h-fit w-full flex-col items-center justify-center gap-16 bg-black pb-20 md:gap-[50px]">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ margin: "-100px" }}
+          className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl"
+        >
           WHAT THEY SAY ABOUT FSAE JOURNEY?
-        </h1>
+        </motion.h1>
         <div className="flex flex-col items-center justify-center gap-4 px-6 md:flex-row md:gap-8 md:px-[100px] lg:gap-12">
-          <div className="relative flex flex-shrink-0 items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ margin: "-100px" }}
+            className="relative flex flex-shrink-0 items-center justify-center"
+          >
             <Image
               src="/images/driver-2.png"
               alt="Team photo"
               width={192}
               height={192}
               className="z-10 h-28 w-28 rounded-full object-cover md:h-60 md:w-60"
-            />{" "}
-            {/* Menambahkan object-cover dan rounded-full adalah praktik yang baik */}
+            />
             <div className="absolute mb-8 mr-8 h-20 w-20 rounded-full bg-green-500 blur-xl md:mr-36 md:mt-36 md:h-32 md:w-32 md:blur-3xl"></div>
-          </div>
-          <div className="flex max-w-[400px] flex-1 flex-col-reverse gap-4 md:flex-col md:px-0 lg:max-w-2xl">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ margin: "-100px" }}
+            className="flex max-w-[400px] flex-1 flex-col-reverse gap-4 md:flex-col md:px-0 lg:max-w-2xl"
+          >
             <p className="text-md font-regular text-center text-white md:text-left md:text-lg lg:text-xl">
               It was more than just a competition. It was a battle of
               persistence, innovation, and teamwork. The intense heat of the
@@ -121,10 +163,16 @@ export default async function Index() {
                 Formula 1 Driver
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col items-center justify-center gap-4 px-6 md:flex-row-reverse md:gap-12 md:px-[100px]">
-          <div className="relative flex flex-shrink-0 items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ margin: "-100px" }}
+            className="relative flex flex-shrink-0 items-center justify-center"
+          >
             <Image
               src="/images/driver-1.png"
               alt="Team photo"
@@ -133,8 +181,14 @@ export default async function Index() {
               className="z-10 h-28 w-28 rounded-full object-cover md:h-60 md:w-60"
             />
             <div className="absolute mb-8 ml-8 h-20 w-20 rounded-full bg-green-500 blur-xl md:ml-36 md:mt-36 md:h-32 md:w-32 md:blur-3xl"></div>
-          </div>
-          <div className="flex max-w-[400px] flex-1 flex-col-reverse gap-4 md:flex-col md:px-0 lg:max-w-2xl">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ margin: "-100px" }}
+            className="flex max-w-[400px] flex-1 flex-col-reverse gap-4 md:flex-col md:px-0 lg:max-w-2xl"
+          >
             <p className="text-md font-regular text-center text-white md:text-right md:text-lg lg:text-xl">
               The anticipation before the start, the rush during every lap, and
               the cheers at the finish told one story. A story of perseverance,
@@ -150,12 +204,18 @@ export default async function Index() {
                 Formula 1 Driver
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* Contact Section */}
-      <div className="relative flex w-full flex-col items-center gap-6 rounded-t-[80px] border-2 border-t-white bg-black px-6 py-12 md:gap-9 md:px-16 md:py-24 lg:px-24 lg:py-36">
+      <motion.div
+        className="relative flex w-full flex-col items-center gap-6 rounded-t-[80px] border-2 border-t-white bg-black px-6 py-12 md:gap-9 md:px-16 md:py-24 lg:px-24 lg:py-36"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ margin: "-100px" }}
+      >
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -168,19 +228,39 @@ export default async function Index() {
         </div>
 
         {/* Content */}
-        <h1 className="relative z-10 max-w-xl border-white text-center text-2xl font-bold text-white md:text-4xl lg:text-6xl">
+        <motion.h1
+          className="relative z-10 max-w-xl border-white text-center text-2xl font-bold text-white md:text-4xl lg:text-6xl"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ margin: "-100px" }}
+        >
           See What Drives Innovation.
-        </h1>
-        <h2 className="font-regular relative z-10 max-w-3xl text-center text-base text-white md:text-lg lg:text-2xl">
+        </motion.h1>
+        <motion.h2
+          className="font-regular relative z-10 max-w-3xl text-center text-base text-white md:text-lg lg:text-2xl"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ margin: "-100px" }}
+        >
           Browse through our latest vehicle and motorcycle lineup that defines
           style, speed, and sustainability.
-        </h2>
-        <Link href="/products">
-          <Button className="relative z-10 rounded-full bg-[#3CF167] px-8 py-3 text-lg font-semibold text-white hover:bg-[#249740] cursor-pointer">
-            Explore Products
-          </Button>
-        </Link>
-      </div>
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ margin: "-100px" }}
+        >
+          <Link href="/products">
+            <Button className="relative z-10 rounded-full bg-[#3CF167] px-8 py-3 text-lg font-semibold text-white hover:bg-[#249740] cursor-pointer">
+              Explore Products
+            </Button>
+          </Link>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
