@@ -30,54 +30,24 @@ export default function Footer() {
 
         {/* Quick Links Section */}
         <div className="space-y-4 text-center lg:text-left">
-          <div className="grid grid-cols-2 gap-x-4 gap-y-3 lg:gap-x-20 lg:gap-y-6">
+          <div className="flex flex-col gap-8 lg:gap-11">
             <Link
               href="/"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
+              className="block text-lg md:text-xl font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
             >
               Home
             </Link>
             <Link
               href="/events"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
+              className="block text-lg md:text-xl font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
             >
-              Events
+              Products
             </Link>
             <Link
               href="/about"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
+              className="block text-lg md:text-xl font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
             >
               About Us
-            </Link>
-            <Link
-              href="/consulting"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
-            >
-              Consulting
-            </Link>
-            <Link
-              href="/clients"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
-            >
-              Clients
-            </Link>
-            <Link
-              href="/faq"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/store"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
-            >
-              Store
-            </Link>
-            <Link
-              href="/account"
-              className="block text-base font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
-            >
-              My Account
             </Link>
           </div>
         </div>
@@ -126,7 +96,7 @@ export default function Footer() {
 
           <div className="space-y-2 text-center text-base text-gray-300 lg:text-left">
             <p className="font-semibold text-white">
-              © 180DC ITS, 2025. All rights reserved.
+              © ANARGYA ITS EV TEAM, 2025. All rights reserved.
             </p>
           </div>
         </div>

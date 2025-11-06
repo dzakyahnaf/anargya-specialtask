@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Search } from "lucide-react";
 
 interface Product {
   id: number;
@@ -60,18 +61,20 @@ export default function ProductsPage() {
 
   return (
     <div className="min-h-screen bg-black px-4 md:px-8 py-12">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
-        🚘 Vehicle & Motorcycle Products
+      <h1 className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-3xl font-bold text-transparent md:text-5xl mb-12 md:mb-14">
+        ANARGYA ITS Products
       </h1>
-
       {/* Search Bar */}
       <div className="flex justify-center mb-8">
-        <input
-          type="text"
-          placeholder="Search vehicle or motorcycle..."
-          className="border border-gray-700 bg-gray-900 px-4 py-2 rounded-xl w-full md:w-1/2 shadow-sm focus:ring-2 focus:ring-green-500 outline-none text-white placeholder-gray-500"
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <div className="relative w-full md:w-1/2">
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 h-5 w-5" />
+          <input
+            type="text"
+            placeholder="Search vehicle or motorcycle..."
+            className="border border-gray-700 bg-gray-900 px-4 py-2 pl-12 rounded-xl w-full shadow-sm focus:ring-2 focus:ring-green-500 outline-none text-white placeholder-gray-500"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
       </div>
 
       {/* Product Grid */}

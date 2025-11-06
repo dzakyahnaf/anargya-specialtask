@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ShoppingCart, Menu, X } from "lucide-react";
+import { ShoppingCart, Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -35,7 +35,7 @@ export default function Navigation() {
               Home
             </Link>
             <Link
-              href="/about-us"
+              href="/"
               className="font-medium text-white transition-colors hover:text-[#d9d9d9]"
             >
               About Us

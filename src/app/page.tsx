@@ -78,7 +78,10 @@ export default async function Index() {
           Sepuluh Nopember Institute of Technology.
         </p>
       </div>
-      <div className="relative flex h-fit w-full flex-col items-center justify-center gap-2 bg-black p-6 pb-24 pt-12 md:gap-[50px] md:pb-64 md:pt-48">
+      <h1 className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl mt-32 md:mt-40">
+        ANARGYA ITS EV CAR
+      </h1>
+      <div className="relative flex h-fit w-full flex-col items-center justify-center gap-2 bg-black p-6 pb-24 pt-12 md:gap-[50px] md:pb-64 md:pt-24">
         <div className="absolute inset-0">
           <Image
             src="/images/bg-home.png"
@@ -88,6 +91,7 @@ export default async function Index() {
             sizes="100vw"
           />
         </div>
+
         <div className="relative z-10 aspect-[15/8] w-[60%] rounded-2xl md:rounded-3xl overflow-hidden">
           <Image
             src="/images/car.png"
@@ -99,21 +103,10 @@ export default async function Index() {
           />
         </div>
       </div>
-      <div className="flex h-fit w-full flex-col items-center justify-center gap-2 bg-black px-6 pb-12 md:gap-6">
-        <div className="-mt-16 bg-gradient-to-r from-green-400 to-green-100 bg-clip-text text-center text-3xl font-bold text-transparent md:-mt-52 md:text-5xl">
-          WHAT IS 180DC ITS?
-        </div>
-        <p className="text-md font-regular max-w-4xl pb-4 text-center text-white md:pb-8 md:text-2xl">
-          180 Degrees Consulting (180DC) is the world’s largest university-based
-          consultancy, providing high-quality consulting services to social
-          enterprises and non-profits. With over 10,000 members in 165+ branches
-          worldwide, 180DC has positively impacted more than 1,500 organizations
-          globally.
-        </p>
-      </div>
+
       <div className="flex h-fit w-full flex-col items-center justify-center gap-4 bg-black py-16 md:gap-[50px]">
         <h1 className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl">
-          WHAT THEY SAY ABOUT US?
+          WHAT THEY SAY ABOUT FSAE JOURNEY?
         </h1>
         <div className="flex flex-col items-center justify-center gap-4 px-6 md:flex-row md:gap-8 md:px-[100px] lg:gap-12">
           <div className="relative flex flex-shrink-0 items-center justify-center">
@@ -122,23 +115,26 @@ export default async function Index() {
               alt="Team photo"
               width={192}
               height={192}
-              className="z-10 h-24 w-24 rounded-full object-cover md:h-60 md:w-60"
+              className="z-10 h-28 w-28 rounded-full object-cover md:h-60 md:w-60"
             />{" "}
             {/* Menambahkan object-cover dan rounded-full adalah praktik yang baik */}
             <div className="absolute mb-8 mr-8 h-20 w-20 rounded-full bg-green-500 blur-xl md:mr-36 md:mt-36 md:h-32 md:w-32 md:blur-3xl"></div>
           </div>
           <div className="flex max-w-[400px] flex-1 flex-col-reverse gap-4 md:flex-col md:px-0 lg:max-w-2xl">
             <p className="text-md font-regular text-center text-white md:text-left md:text-lg lg:text-xl">
-              It was good! It was contextualised to an international business
-              and also very adaptable to the needs of the company. Helps with
-              the actual implementation of the recommendations.
+              It was more than just a competition. It was a battle of
+              persistence, innovation, and teamwork. The intense heat of the
+              track, the roar of engines, and the cheers from the paddock all
+              became part of a journey that tested our limits and strengthened
+              our unity. Through every struggle and triumph, FSAE Japan 2025
+              became a symbol of how far passion can take us.
             </p>
             <div className="flex flex-col text-center md:text-left">
               <p className="text-sm font-bold text-white md:text-lg">
-                CEO, The Body Shop
+                Charles Leclerc, Scuderia Ferrari
               </p>
               <p className="font-regular text-sm text-white md:text-lg">
-                Client, 180DC ITS
+                Formula 1 Driver
               </p>
             </div>
           </div>
@@ -150,22 +146,24 @@ export default async function Index() {
               alt="Team photo"
               width={192}
               height={192}
-              className="z-10 h-24 w-24 rounded-full object-cover md:h-48 md:w-48"
+              className="z-10 h-28 w-28 rounded-full object-cover md:h-60 md:w-60"
             />
             <div className="absolute mb-8 ml-8 h-20 w-20 rounded-full bg-green-500 blur-xl md:ml-36 md:mt-36 md:h-32 md:w-32 md:blur-3xl"></div>
           </div>
           <div className="flex max-w-[400px] flex-1 flex-col-reverse gap-4 md:flex-col md:px-0 lg:max-w-2xl">
             <p className="text-md font-regular text-center text-white md:text-right md:text-lg lg:text-xl">
-              It was good! It was contextualised to an international business
-              and also very adaptable to the needs of the company. Helps with
-              the actual implementation of the recommendations.
+              The anticipation before the start, the rush during every lap, and
+              the cheers at the finish told one story. A story of perseverance,
+              precision, and passion that united everyone on the team. FSAE
+              Japan 2025 captured the spirit of engineering and the thrill of
+              human achievement.
             </p>
             <div className="flex flex-col text-center md:text-right">
               <p className="text-sm font-bold text-white md:text-lg">
-                CEO, The Body Shop
+                Max Verstappen, Red Bull Racing
               </p>
               <p className="font-regular text-sm text-white md:text-lg">
-                Client, 180DC ITS
+                Formula 1 Driver
               </p>
             </div>
           </div>
@@ -187,14 +185,14 @@ export default async function Index() {
 
         {/* Content */}
         <h1 className="relative z-10 max-w-4xl border-white text-center text-2xl font-bold text-white md:text-4xl lg:text-5xl">
-          We Welcome the Opportunity to Connect.
+          See What Drives Innovation.
         </h1>
         <h2 className="font-regular relative z-10 max-w-3xl text-center text-base text-white md:text-lg lg:text-xl">
-          See how our services align with your needs, and get in touch to
-          explore how we can help move your business forward.
+          Browse through our latest vehicle and motorcycle lineup that defines
+          style, speed, and sustainability.
         </h2>
-        <Button className="relative z-10 rounded-full bg-[#3CF167] px-8 py-3 text-lg font-semibold text-[#18652a] hover:bg-[#249740]">
-          Contact Us
+        <Button className="relative z-10 rounded-full bg-[#3CF167] px-8 py-3 text-lg font-semibold text-white hover:bg-[#249740] cursor-pointer">
+          Explore Products
         </Button>
       </div>
     </div>
