@@ -1,27 +1,7 @@
 import { Button } from "@/components/ui/button";
-import ConnectSupabaseSteps from "@/components/ConnectSupabaseSteps";
-import SignUpUserSteps from "@/components/SignUpUserSteps";
-import Header from "@/components/Header";
 import Image from "next/image";
-import { cookies } from "next/headers";
-import { createServerClient } from "@/utils/supabase";
 
 export default async function Index() {
-  const cookieStore = cookies();
-
-  // const canInitSupabaseClient = () => {
-  //   // This function is just for the interactive tutorial.
-  //   // Feel free to remove it once you have Supabase connected.
-  //   try {
-  //     createServerClient(cookieStore)
-  //     return true
-  //   } catch (e) {
-  //     return false
-  //   }
-  // }
-
-  // const isSupabaseConnected = canInitSupabaseClient()
-
   return (
     <div
       className="flex min-h-screen w-full flex-col items-center justify-center transition-colors"
