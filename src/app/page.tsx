@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Index() {
   return (
     <div
-      className="flex min-h-screen w-full flex-col items-center justify-center transition-colors"
+      className="flex min-h-screen w-full flex-col items-center justify-center"
       style={{
         background: "linear-gradient(145deg, #000000 40%, #3CF167 200%)",
       }}
@@ -29,8 +30,8 @@ export default async function Index() {
             left: "50%",
             top: "50%",
             transform: "translate(-50%, -50%)",
-            width: "1240px",
-            height: "425px",
+            width: "min(90vw, 1240px)",
+            height: "min(50vh, 425px)",
             background: "rgba(0, 0, 0, 0.90)",
             filter: "blur(90px)",
           }}
@@ -61,7 +62,10 @@ export default async function Index() {
       <h1 className="bg-gradient-to-r from-green-100 to-green-400 bg-clip-text text-center text-2xl font-bold text-transparent md:text-5xl mt-32 md:mt-40">
         ANARGYA ITS EV CAR
       </h1>
-      <div className="relative flex h-fit w-full flex-col items-center justify-center gap-2 bg-black p-6 pb-24 pt-12 md:gap-[50px] md:pb-64 md:pt-24">
+      <div
+        id="about-us"
+        className="relative flex h-fit w-full flex-col items-center justify-center gap-2 bg-black p-6 pb-24 pt-12 md:gap-[50px] md:pb-64 md:pt-24 scroll-smooth"
+      >
         <div className="absolute inset-0">
           <Image
             src="/images/bg-home.png"
@@ -171,9 +175,11 @@ export default async function Index() {
           Browse through our latest vehicle and motorcycle lineup that defines
           style, speed, and sustainability.
         </h2>
-        <Button className="relative z-10 rounded-full bg-[#3CF167] px-8 py-3 text-lg font-semibold text-white hover:bg-[#249740] cursor-pointer">
-          Explore Products
-        </Button>
+        <Link href="/products">
+          <Button className="relative z-10 rounded-full bg-[#3CF167] px-8 py-3 text-lg font-semibold text-white hover:bg-[#249740] cursor-pointer">
+            Explore Products
+          </Button>
+        </Link>
       </div>
     </div>
   );

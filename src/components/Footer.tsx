@@ -38,16 +38,16 @@ export default function Footer() {
               Home
             </Link>
             <Link
-              href="/events"
-              className="block text-lg md:text-xl font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
-            >
-              Products
-            </Link>
-            <Link
-              href="/about"
+              href="/#about-us"
               className="block text-lg md:text-xl font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
             >
               About Us
+            </Link>
+            <Link
+              href="/products"
+              className="block text-lg md:text-xl font-bold text-gray-300 transition-all duration-300 hover:translate-x-1 hover:text-white"
+            >
+              Products
             </Link>
           </div>
         </div>
@@ -60,17 +60,17 @@ export default function Footer() {
             </h3>
             <div className="flex justify-center gap-4 lg:justify-start">
               {/* Instagram */}
-              <a
-                href="#"
+              <Link
+                href="https://www.instagram.com/anargya.its/"
                 className="group flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500"
                 aria-label="Instagram"
               >
                 <Instagram className="h-6 w-6 text-gray-300 transition-colors duration-300 group-hover:text-white" />
-              </a>
+              </Link>
 
               {/* TikTok */}
-              <a
-                href="#"
+              <Link
+                href="https://www.tiktok.com/@anargya.its"
                 className="group flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 hover:scale-110 hover:bg-black"
                 aria-label="TikTok"
               >
@@ -81,16 +81,16 @@ export default function Footer() {
                 >
                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
                 </svg>
-              </a>
+              </Link>
 
               {/* LinkedIn */}
-              <a
-                href="#"
+              <Link
+                href="https://www.linkedin.com/company/anargya-its-team-electric-fomula/posts/?feedView=all"
                 className="group flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 transition-all duration-300 hover:scale-110 hover:bg-blue-600"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6 text-gray-300 transition-colors duration-300 group-hover:text-white" />
-              </a>
+              </Link>
             </div>
           </div>
 

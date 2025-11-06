@@ -35,7 +35,7 @@ export default function Navigation() {
               Home
             </Link>
             <Link
-              href="/"
+              href="/#about-us"
               className="font-medium text-white transition-colors hover:text-[#d9d9d9]"
             >
               About Us
@@ -94,7 +94,7 @@ export default function Navigation() {
               Home
             </Link>
             <Link
-              href="/about-us"
+              href="/#about-us"
               className="px-4 py-2 font-medium text-white transition-colors hover:text-[#d9d9d9]"
               onClick={() => setIsOpen(false)}
             >
